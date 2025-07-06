@@ -1,0 +1,31 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  11
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+    // water phase (phase 1)
+Dwater           Dwater [0 2 -1 0 0 0 0] 5e-6;
+    // air phase (phase 2)
+Dair           Dair [0 2 -1 0 0 0 0] 5e-6;
+
+Temp            Temp [ 0 0 0 1 0 0 0 ] 298;
+Schmidtnumber	Schmidtnumber [ 0 0 0 0 0 0 0 ] 1;
+
+HenryConstant   1;
+
+// ************************************************************************* //
+
+
+
